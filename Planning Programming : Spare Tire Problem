@@ -1,0 +1,15 @@
+Init(At(Flat, Axle) ∧ At(Spare, trunk)) 
+Goal(At(Spare, Axle)) 
+Action(Remove(Spare, Trunk) 
+PRECOND: At(Spare, Trunk) 
+EFFECT: ¬At(Spare, Trunk) ∧ At(Spare, Ground)) 
+Action(Remove(Flat, Axle)
+PRECOND: At(Flat, Axle) 
+EFFECT: ¬At(Flat, Axle) ∧ At(Flat, Ground)) 
+Action(PutOn(Spare, Axle) 
+PRECOND: At(Spare, Groundp) ∧ ¬At(Flat, Axle)
+EFFECT: At(Spare, Axle) ∧ ¬At(Spare ,Ground)) 
+Action(LeaveOvernight 
+PRECOND:
+EFFECT: ¬At(Spare, Ground) ∧ ¬At(Spare, Axle) ∧ ¬At(Spare, trunk) ∧ ¬At(Flat, Ground) ∧
+¬At(Flat, Axle) )
