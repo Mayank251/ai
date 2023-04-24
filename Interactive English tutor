@@ -1,0 +1,16 @@
+Interactive English Tutor:
+PEAS:
+Performance measure: The improvement in the student's English language skills.
+Environment: A digital learning platform.
+Actuators: Generating learning content and providing feedback.
+Sensors: Student performance and responses.
+Interactive English Tutor:
+States: The state of the system is defined by the knowledge and proficiency level of the student and the curriculum materials available.
+
+Initial state: The initial state is defined by the starting knowledge and proficiency level of the student and the available curriculum materials.
+
+Actions: The actions available to the tutor are presenting curriculum materials, testing the student's knowledge, and providing feedback on the student's performance. Each action has a cost based on the time and effort required.
+
+Goal state: The goal state is when the student has achieved the desired level of proficiency in the English language.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state.
