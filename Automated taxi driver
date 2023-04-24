@@ -1,0 +1,16 @@
+Automated Taxi Driver:
+PEAS:
+Performance measure: Safe and efficient transportation of passengers.
+Environment: A road network.
+Actuators: Acceleration, braking, and steering.
+Sensors: Traffic information, road conditions, and passenger locations.
+Automated Taxi Driver:
+States: The state of the system is defined by the location of the taxi, the destination of the passenger, and the traffic and road conditions.
+
+Initial state: The initial state is defined by the location of the taxi and the destination of the passenger.
+
+Actions: The actions available to the taxi driver are driving to a new location, picking up a passenger, and dropping off a passenger. Each action has a cost based on the time and distance required.
+
+Goal state: The goal state is when all passengers have been safely and efficiently transported to their destinations.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state.
