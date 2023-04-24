@@ -1,0 +1,20 @@
+Internet Shopping Agent:
+PEAS:
+Performance measure: The number of successful purchases.
+Environment: An online shopping platform.
+Actuators: Clicking, browsing, and purchasing functions.
+Sensors: Product information, user preferences, and purchase history.
+States: The state of the world is defined by the items in the shopping cart and the availability and prices of items in the online store.
+
+Initial state: The initial state is defined by an empty shopping cart and the initial availability and prices of items in the online store.
+
+Actions: The actions available to the shopping agent are adding an item to the cart, removing an item from the cart, and purchasing the items in the cart. Each action has a cost based on the price of the item(s) involved.
+
+Goal state: The goal state is when all the desired items have been purchased and are in the shopping cart.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state.
+
+
+
+
+
