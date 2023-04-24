@@ -1,0 +1,16 @@
+Medical Diagnosis System:
+PEAS:
+Performance measure: The accuracy of the diagnosis.
+Environment: A medical facility.
+Actuators: Collecting and analyzing patient information and making a diagnosis.
+Sensors: Patient symptoms, medical history, and test results.
+Medical Diagnosis System:
+States: The state of the system is defined by the patient's symptoms, medical history, and test results, as well as the available medical knowledge.
+
+Initial state: The initial state is defined by the patient's symptoms, medical history, and any available test results.
+
+Actions: The actions available to the system are diagnosing the patient based on the available information, ordering additional tests or procedures, and prescribing treatments. Each action has a cost based on the complexity and invasiveness of the action.
+
+Goal state: The goal state is when the patient has been accurately diagnosed and treated.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state.
