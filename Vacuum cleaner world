@@ -1,0 +1,24 @@
+Vacuum-cleaner World:
+PEAS:
+Performance measure: The cleanliness of the room, i.e., the number of dirt patches cleaned.
+Environment: A room with dirt patches and a vacuum cleaner.
+Actuators: The vacuum cleaner's motor and wheels.
+Sensors: Sensors to detect dirt patches, the position of the vacuum cleaner, and the state of the vacuum cleaner's bin.
+
+
+
+
+States: The state of the world is defined by the position of the vacuum cleaner and the presence or absence of dirt patches in each square of the room.
+
+Initial state: The initial state is defined by the starting position of the vacuum cleaner and the initial dirt configuration of the room.
+
+Actions: The actions available to the vacuum cleaner are moving up, down, left, or right, and sucking up dirt in the current square. Each action has a cost of one.
+
+Goal state: The goal state is when all the dirt patches in the room have been cleaned.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state.
+
+
+
+
+
