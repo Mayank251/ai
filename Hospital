@@ -1,0 +1,17 @@
+Hospital Management System:
+PEAS:
+Performance measure: The efficiency and effectiveness of the hospital's operations.
+Environment: A hospital.
+Actuators: Scheduling appointments, assigning staff, and managing resources.
+Sensors: Patient information, staff availability, and resource usage.
+Hospital Management System:
+
+States: The state of the system is defined by the availability of hospital staff and resources, the patients currently in the hospital, and the status of their medical conditions.
+
+Initial state: The initial state is defined by the availability of hospital staff and resources, the initial set of patients in the hospital, and their medical conditions.
+
+Actions: The actions available to the hospital management system are admitting a new patient, discharging a patient, assigning staff to patients, and ordering medical procedures or treatments. Each action has a cost based on the resources required and the time and effort involved.
+
+Goal state: The goal state is when all patients have been treated and discharged, and all hospital staff and resources have been optimally utilized.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state. The cost function could be based on factors such as the amount of time a patient spent in the hospital, the number of medical procedures performed, and the efficiency of resource utilization.
