@@ -1,0 +1,35 @@
+Part-Picking Robot:
+PEAS:
+Performance measure: The accuracy and speed of part picking.
+Environment: A manufacturing facility.
+Actuators: Picking and placing parts.
+Sensors: Part information, inventory levels, and production schedules.
+Hospital Management System:
+
+States: The state of the system is defined by the availability of hospital staff and resources, the patients currently in the hospital, and the status of their medical conditions.
+
+Initial state: The initial state is defined by the availability of hospital staff and resources, the initial set of patients in the hospital, and their medical conditions.
+
+Actions: The actions available to the hospital management system are admitting a new patient, discharging a patient, assigning staff to patients, and ordering medical procedures or treatments. Each action has a cost based on the resources required and the time and effort involved.
+
+Goal state: The goal state is when all patients have been treated and discharged, and all hospital staff and resources have been optimally utilized.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state. The cost function could be based on factors such as the amount of time a patient spent in the hospital, the number of medical procedures performed, and the efficiency of resource utilization.
+
+
+
+
+
+Pranay Indulkar
+complete for part- picking robot
+Sure! Here's the completed state space description for Part-Picking Robot:
+
+States: The state of the system is defined by the inventory of parts in the warehouse, the status of the part picking robot, and the assembly line requirements.
+
+Initial state: The initial state is defined by the starting inventory of parts in the warehouse and the initial assembly line requirements.
+
+Actions: The actions available to the part-picking robot are moving to a new location, picking up a part, placing a part in a specific location, and recharging the robot's battery. Each action has a cost based on the distance traveled and the time and effort required.
+
+Goal state: The goal state is when all the required parts have been picked up and delivered to the assembly line.
+
+Path cost: The path cost is the sum of the costs of all the actions taken to reach the goal state. The cost function could be based on factors such as the amount of time it took to pick and deliver each part, the distance traveled, and the efficiency of the robot's battery usage.
