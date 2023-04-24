@@ -1,0 +1,60 @@
+Proving Logical Conclusions.
+
+
+sambhavjha_ce_2020@ltce.in
+Consider the following axioms
+
+Every
+
+boy or girl is a child.
+
+£2)
+
+Every
+
+child gets a doll Or a train
+
+Or a lump of coal
+
+(3) No boy gets any doll
+
+(4)
+
+NO child who is good gets any lump
+
+of tocat coal.
+
+Is) Prove by resolution that "if no child gets a train, then no boy
+
+Is good".
+
+To prove this using resolution, we can assume the negation of the conclusion, which is "no boy is good but some child gets a train" and try to derive a contradiction.
+
+Let's represent the axioms as clauses in first-order logic:
+
+(1) ∀x (Boy(x) ∨ Girl(x) → Child(x))
+(2) ∀x (Child(x) → Doll(x) ∨ Train(x) ∨ LumpOfCoal(x))
+(3) ∀x (Boy(x) → ¬Doll(x))
+(4) ∀x (Good(x) ∧ Child(x) → ¬LumpOfCoal(x))
+(5) ¬∀x (Train(x) → Good(x))
+
+We can convert the negation of the conclusion into clause form:
+
+¬(∀x (Train(x) → Good(x))) = ∃x (Train(x) ∧ ¬Good(x))
+
+Now we can use resolution to derive a contradiction. We start by adding the negation of the conclusion to the set of clauses, and then we resolve with the other clauses to simplify the set until we reach an empty clause, which indicates a contradiction.
+
+¬∀x (Train(x) → Good(x)) (negation of conclusion)
+Train(a) ∧ ¬Good(a) (skolemized form of ∃x (Train(x) ∧ ¬Good(x)))
+Child(a) (from 2 and 2)
+∀x (Child(x) → Doll(x) ∨ Train(x) ∨ LumpOfCoal(x)) (axiom 2)
+Train(a) ∨ Doll(a) ∨ LumpOfCoal(a) (from 4 and 3)
+¬Doll(a) (from 3)
+Train(a) (from 5 and 6)
+Boy(a) (from 1, 7, and 4)
+¬Good(a) (from 2)
+Good(a) ∧ Child(a) (from 3 and 8)
+¬LumpOfCoal(a) (from 4 and 10)
+LumpOfCoal(a) (from 5 and 6)
+⊥ (from 11 and 12)
+We have derived an empty clause, which means that the set of clauses is unsatisfiable, or in other words, the negation of the conclusion is true. Therefore, we have proven that "if no child gets a train, then no boy is good".
